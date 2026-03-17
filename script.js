@@ -179,7 +179,7 @@ function changeCurrencyFrom() {
                 const currencyConverted = document.querySelector(".currency-converted")
 
                 currencyConverted.innerHTML = "Bitcoin"
-                logoCurrencyTo.src = ("./assets/bitcoin.png")
+                logoCurrencyTo.src = ("assets/bitcoin.png")
             }
 
             convertValues()
