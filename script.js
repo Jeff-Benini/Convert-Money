@@ -10,7 +10,6 @@ function convertValues() {
     const dolarToday = 5.23
     const euroToday = 6.02
     const libraToday = 6.97
-    const bitcoinToday = 380.000
 
         let rateFrom = 1
 
@@ -26,9 +25,6 @@ function convertValues() {
             rateFrom = libraToday
         }
 
-        if (currencyConvertFrom.value === "bitcoin") {
-            rateFrom = bitcoinToday
-        }
 
         const valueInReal = inputValue * rateFrom
 
@@ -53,9 +49,6 @@ function convertValues() {
             }).format(valueInReal / libraToday)
         }
 
-        if (currencyConvertTo.value == "bitcoin") {
-            valueConverted.innerHTML = (valueInReal / bitcoinToday).toFixed(3) + " BTC"
-        }
 
         if (currencyConvertTo.value == "real") {
         valueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -85,9 +78,6 @@ function convertValues() {
             }).format(inputValue)
         }
 
-        if (currencyConvertFrom.value == "bitcoin") {
-            valueToConvert.innerHTML = (inputValue).toFixed(3) + " BTC"
-        }
 
         if (currencyConvertFrom.value == "real") {
         valueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -103,7 +93,7 @@ function changeCurrencyFrom() {
                 const currencyToConvert = document.querySelector(".currency-to-convert")
 
                 currencyToConvert.innerHTML = "Real"
-                logoCurrencyTo.src = ("./assets/real.png")
+                logoCurrencyTo.src = "assets/real.png"
             }
 
             if (currencyConvertFrom.value == "dolar") {
@@ -111,7 +101,7 @@ function changeCurrencyFrom() {
                 const currencyToConvert = document.querySelector(".currency-to-convert")
 
                 currencyToConvert.innerHTML = "Dólar"
-                logoCurrencyTo.src = ("./assets/dolar.png")
+                logoCurrencyTo.src = "assets/dolar.png"
             }
 
             if (currencyConvertFrom.value == "euro") {
@@ -119,7 +109,7 @@ function changeCurrencyFrom() {
                 const currencyToConvert = document.querySelector(".currency-to-convert")
 
                 currencyToConvert.innerHTML = "Euro"
-                logoCurrencyTo.src = ("./assets/euro.png")
+                logoCurrencyTo.src = "assets/euro.png"
             }
 
             if (currencyConvertFrom.value == "libra") {
@@ -127,16 +117,9 @@ function changeCurrencyFrom() {
                 const currencyToConvert = document.querySelector(".currency-to-convert")
 
                 currencyToConvert.innerHTML = "Libra"
-                logoCurrencyTo.src = ("./assets/libra.png")
+                logoCurrencyTo.src = "assets/libra.png"
             }
 
-            if (currencyConvertFrom.value == "bitcoin") {
-                const logoCurrencyTo = document.querySelector(".logo-currency-from")
-                const currencyToConvert = document.querySelector(".currency-to-convert")
-
-                currencyToConvert.innerHTML = "Bitcoin"
-                logoCurrencyTo.src = ("./assets/bitcoin.png")
-            }
 
             convertValues()
         }
@@ -147,7 +130,7 @@ function changeCurrencyFrom() {
                 const currencyConverted = document.querySelector(".currency-converted")
 
                 currencyConverted.innerHTML = "Real"
-                logoCurrencyTo.src = ("./assets/real.png")
+                logoCurrencyTo.src = "assets/real.png"
             }
 
             if (currencyConvertTo.value == "dolar") {
@@ -155,7 +138,7 @@ function changeCurrencyFrom() {
                 const currencyConverted = document.querySelector(".currency-converted")
 
                 currencyConverted.innerHTML = "Dólar"
-                logoCurrencyTo.src = ("./assets/dolar.png")
+                logoCurrencyTo.src = "assets/dolar.png"
             }
 
             if (currencyConvertTo.value == "euro") {
@@ -163,7 +146,7 @@ function changeCurrencyFrom() {
                 const currencyConverted = document.querySelector(".currency-converted")
 
                 currencyConverted.innerHTML = "Euro"
-                logoCurrencyTo.src = ("./assets/euro.png")
+                logoCurrencyTo.src = "assets/euro.png"
             }
 
             if (currencyConvertTo.value == "libra") {
@@ -171,16 +154,9 @@ function changeCurrencyFrom() {
                 const currencyConverted = document.querySelector(".currency-converted")
 
                 currencyConverted.innerHTML = "Libra"
-                logoCurrencyTo.src = ("./assets/libra.png")
+                logoCurrencyTo.src = "assets/libra.png"
             }
 
-            if (currencyConvertTo.value == "bitcoin") {
-                const logoCurrencyTo = document.querySelector(".logo-currency-to")
-                const currencyConverted = document.querySelector(".currency-converted")
-
-                currencyConverted.innerHTML = "Bitcoin"
-                logoCurrencyTo.src = ("assets/bitcoin.png")
-            }
 
             convertValues()
         }
