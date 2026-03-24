@@ -10,12 +10,12 @@
 <h2 id="sobre">Sobre</h2>
 <h3>Este projeto foi desenvolvido com base no que aprendi no curso Desenvolvedor Full Stack no <a href="https://www.devclub.com.br/">DevClub</a> com foco em JavaScript, HTML e CSS visando criar um conversor de moedas.</h3>
 <br>
-<h2 id="tecnologias">Tecnologias Utilizadas</h2>
-<ol>
+<h1 id="tecnologias">Tecnologias Utilizadas</h2>
+<ul>
   <li>JavaScript</li>
   <li>HTML</li>
   <li>CSS</li>
-</ol>
+</ul>
 <br>
 <h2 id="mockup">Mockup</h2>
 <img src="https://github.com/Jeff-Benini/Convert-Money/blob/main/assets/Mockup%20Convert%20Money.png"/>
